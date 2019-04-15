@@ -129,12 +129,36 @@ table {
 .width-100 {
   width: 100%;
 }
-@font-face {
-  font-family: 'Ubuntu';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Ubuntu Regular'), local('Ubuntu-Regular'), url(https://fonts.gstatic.com/s/ubuntu/v13/4iCs6KVjbNBYlgoKfw7z.ttf) format('truetype');
-}
 html {
   font-size: 62.5%;
+  font-family: 'Ubuntu', sans-serif;
+}
+.nav-header {
+  width: 100%;
+  display: flex;
+  color: white;
+  flex-direction: row;
+  text-align: center;
+  background-color: #0e0f14;
+}
+.nav-header .logo {
+  color: white;
+  font-size: 4rem;
+  padding: 1% 1%;
+}
+.nav-header .nav {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.nav-header .nav-link {
+  text-decoration: none;
+  margin: 2% 2%;
+  color: white;
+  font-size: 2rem;
+}
+.container {
+  max-width: 800 px;
+  margin: 0 auto;
 }
