@@ -1,48 +1,9 @@
-// Reset
+// imports
 @import 'reset.less';
 @import 'mixins.less';
 @import 'variables.less';
 @import 'global.less';
-
-
-// Reset
-
-html {
-    font-size: 62.5%;
-    font-family: 'Ubuntu', sans-serif;
-}
-
-.nav-header {
-    width: 100%;
-    display: flex;
-    color: white;
-    flex-direction: row;
-    text-align: center;
-    background-color: @flock-black-background;
-
-    .logo {
-        color: white;
-        font-size: 4rem;
-        padding: 1% 1%;
-    }
-
-    .nav {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-    }
-
-    .nav-link{
-        text-decoration: none;
-        margin: 2% 2%;   
-        color: white;
-        font-size: 2.0rem;
-    }
-
-}
-.container {
-    max-width: 800 px;
-    margin: 0 auto;
-}
+@import 'navigation.less';
+@import 'tabs.less';
+@import 'home-page.less';
 
