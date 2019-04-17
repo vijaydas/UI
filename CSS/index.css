@@ -265,6 +265,9 @@ img {
 .tabs .tabs-link-selected:hover {
   background-color: #FFFFFF;
 }
+body {
+  background-color: #00b6cc;
+}
 .home {
   max-width: 800px;
   margin: 0 auto;

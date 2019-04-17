@@ -1,9 +1,11 @@
 class Tabs {
     constructor(tabs) {
       this.tabs = tabs;
-  
+    
       this.links = document.querySelectorAll(".tabs-link");
-  
+      
+     
+
       this.links = Array.from(this.links).map(function(link) {
         return new TabLink(link);
       });
@@ -22,6 +24,7 @@ class Tabs {
         link.link.addEventListener('click', () => this.select(link))});
     }
     select(link) {
+     
       this.selectedTab.deselect();
       this.selectedTab = link;
       link.select();
