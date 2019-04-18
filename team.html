@@ -16,10 +16,8 @@
       rel="stylesheet"
     />
 
-
-
     <link href="css/index.css" rel="stylesheet" />
-    <script src="./components/team.js" async ></script>
+    <script src="./components/team.js" async></script>
   </head>
 
   <header class="nav-header">
@@ -31,36 +29,66 @@
       <a class="nav-link" href="#">Login</a>
     </div>
   </header>
-   
+
   <body>
-      <div class="flyingelement">
-          <img
-            src="images/cta-image.png"
-            alt="Murmuration of Starlings at Gretna"
-          />
-        </div>
+    <div class="flyingelement">
+      <img
+        src="images/cta-image.png"
+        alt="Murmuration of Starlings at Gretna"
+      />
+    </div>
 
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
 
     <div class="teams">
       <div class="groups">
         <div data-team="All" class="team active-team">All</div>
+        <div data-team="Team Lead" class="team">Team Lead</div>
         <div data-team="Data Scientists" class="team">Data Science</div>
-        <div data-team="Back End Architect" class="team">Back End Architecture</div>
-        <div data-team="Front End Architect" class="team">Front End Architecture</div>
-        <div data-team="User Interface" class="team">User Interface Development</div>
+        <div data-team="Back End Architect" class="team">
+          Back End Architecture
+        </div>
+        <div data-team="Front End Architect" class="team">
+          Front End Architecture
+        </div>
+        <div data-team="User Interface" class="team">
+          User Interface Development
+        </div>
       </div>
     </div>
 
-   <!-- CARDS COMPONENT -->
+    <!-- CARDS COMPONENT -->
     <div class="cards-container">
       <!-- CARD COMPONENTS -->
-      <div class="card" data-team="Data Scientists">
-          <div class="profile-header">
-              <img src="images/flockscreenshot.png" />
+      <div class="card" data-team="Team Lead">
+        <div class="card-top">
+        <div class="profile-header">
+          <img src="images/flockscreenshot.png" />
+        </div>
+        <div class="team-member">
+          <div class="img-container">
+            <img src="images/sebastian.jpg" />
           </div>
-        <div class="author">
+          <span>Sebastian Norena</span>
+        </div>
+      </div>
+      <div class="card-middle">
+        <span>Data Scientist / Machine Learning Engineer, Project Manager at Lambda School, and Build Week Team Leader for the Flocks Project.</span>
+        
+      </div>
+      <div class="card-bottom">
+        <a href="https://github.com/07sebascode"><img src="images/GitHub.png"/></a>
+          
+      </div>
+
+
+      </div>
+
+      <div class="card" data-team="Data Scientists">
+        <div class="profile-header">
+          <img src="images/flockscreenshot.png" />
+        </div>
+        <div class="team-member">
           <div class="img-container">
             <img src="images/cta-v1.png" />
           </div>
@@ -69,10 +97,10 @@
       </div>
 
       <div class="card" data-team="Data Scientists">
-        <div class="headline">
-          First Name, Last Name
+        <div class="profile-header">
+          <img src="images/flockscreenshot.png" />
         </div>
-        <div class="author">
+        <div class="team-member">
           <div class="img-container">
             <img src="images/cta-v1.png" />
           </div>
@@ -81,21 +109,10 @@
       </div>
 
       <div class="card" data-team="Data Scientists">
-        <div class="headline">
-          First Name, Last Name
+        <div class="profile-header">
+          <img src="images/flockscreenshot.png" />
         </div>
-        <div class="author">
-          <div class="img-container">
-            <img src="images/cta-v1.png" />
-          </div>
-          <span>placeholder</span>
-        </div>
-      </div>
-      <div class="card" data-team="Data Scientists">
-        <div class="headline">
-          First Name, Last Name
-        </div>
-        <div class="author">
+        <div class="team-member">
           <div class="img-container">
             <img src="images/cta-v1.png" />
           </div>
@@ -104,10 +121,10 @@
       </div>
 
       <div class="card" data-team="Front End Architect">
-        <div class="headline">
-          First Name, Last Name
+        <div class="profile-header">
+          <img src="images/flockscreenshot.png" />
         </div>
-        <div class="author">
+        <div class="team-member">
           <div class="img-container">
             <img src="images/cta-v1.png" />
           </div>
@@ -116,10 +133,10 @@
       </div>
 
       <div class="card" data-team="Back End Architect">
-        <div class="headline">
-          First Name, Last Name
+        <div class="profile-header">
+          <img src="images/flockscreenshot.png" />
         </div>
-        <div class="author">
+        <div class="team-member">
           <div class="img-container">
             <img src="images/cta-v1.png" />
           </div>
@@ -128,10 +145,10 @@
       </div>
 
       <div class="card" data-team="User Interface">
-        <div class="headline">
-          First Name, Last Name
+        <div class="profile-header">
+          <img src="images/flockscreenshot.png" />
         </div>
-        <div class="author">
+        <div class="team-member">
           <div class="img-container">
             <img src="images/cta-v1.png" />
           </div>
@@ -140,22 +157,16 @@
       </div>
 
       <div class="card" data-team="User Interface">
-        <div class="headline">
-          First Name, Last Name
+        <div class="profile-header">
+          <img src="images/flockscreenshot.png" />
         </div>
-        <div class="author">
+        <div class="team-member">
           <div class="img-container">
             <img src="images/cta-v1.png" />
           </div>
           <span>placeholder</span>
         </div>
       </div>
-
-
-
-
-
     </div>
   </body>
 </html>
-

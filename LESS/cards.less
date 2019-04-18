@@ -1,64 +1,102 @@
 .cards-container {
-   .flex(space-evenly);
-    // display: flex;
-    // justify-content: center;
-    .width-100();
+  font-family: "Ubuntu", sans-serif;
+  .flex(space-evenly);
+  // display: flex;
+  // justify-content: center;
+  .width-100();
+  background-color: @column-black;
+  //margin-top:0px;
+  flex-wrap: wrap;
+
+  // @phone {
+  //   width: 500px;
+  // }
+  .card {
+    //.border-bottom-grey();
+    .flex(space-between, none, column);
     background-color: @column-black;
-    //margin-top:0px;
-    flex-wrap: wrap;
+    // background-color: @white;
+    width: 300px;
+    height: 175px;
+    margin-top: 20px;
+    margin-bottom: 16px;
+    padding: 24px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: @card-border;
+    p {
+      color: @white;
+    }
+    span {
+      //font-family: "Hind", sans-serif;
+      color: @white;
+      //padding-left: 10px;
+      font-size: 12px;
+      letter-spacing: 1px;
+      //font-weight: bold;
+    }
+    .card-top {
+      .flex(space-between, none, row-reverse);
+      width: 100%;
+    }
 
+    .card-middle {
+      .flex(space-between, none, row);
+      padding: 0;
+      margin: 10px 0 0 0;
 
+    }
 
-    
-    // @phone {
-    //   width: 500px;
-    // }
-    .card {
-      //.border-bottom-grey();
-      .flex(space-between, none, column);
-      background-color: @column-black;
-     // background-color: @white;
-      width: 300px;
-      height: 175px;
-      margin-top: 20px;
-      margin-bottom: 16px;
-      padding: 24px;
-      border-radius: 5px;
-      border-style: solid;
-      border-width: 2px;
-      border-color: @card-border;
+    .card-bottom {
+      display: flex;
+      justify-content: center;
+      img {
+        margin-top: 10px;
+        height: 30px;
+        width: 30px;
+      }
+    }
 
-      
+    .profile-header {
+      display: flex;
+      //flex-direction: row;
+      //padding-right: 10px;
+      //border-right: 1px solid @light-blue;
+      justify-content: flex-end;
+      width: 20%;
 
-      .profile-header {
-        display: flex;
-        //padding-right: 10px;
-        //border-right: 1px solid @light-blue;
-        align-items: right;
+      img {
+        //display: flex;
+        //justify-content: flex-end;
+        height: 20px;
+        width: 20px;
+      }
+    }
+
+    .team-member {
+      .flex(none, none);
+      //align-items:;
+      //margin-top: 15px;
+
+      width: 80%;
+      .img-container {
+        padding-right: 10px;
+        border-right: 1px solid @light-blue;
+        height: 40px;
+        align-items: flex-start;
         img {
-            height: 20px;
-            width: 20px;
- 
-          }
+          width: 40px;
         }
-      
-      .author {
-        .flex(none, center);
-        margin-top: 15px;
-        .img-container {
-          padding-right: 10px;
-          border-right: 1px solid @light-blue;
-          height: 40px;
-          img {
-            width: 40px;
-          }
-        }
-        span {
-          padding-left: 10px;
-          font-size: 12px;
-          letter-spacing: 1px;
-          font-weight: bold;
-        }
+      }
+      span {
+       // 
+        color: @white;
+        padding-left: 10px;
+        font-size: 18px;
+        letter-spacing: 1px;
+        //font-weight: bold;
       }
     }
   }
+}
