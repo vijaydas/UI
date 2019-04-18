@@ -1,28 +1,32 @@
 .cards-container {
-    .flex(space-evenly);
+   .flex(space-evenly);
+    // display: flex;
+    // justify-content: center;
     .width-100();
+    background-color: @white;
     margin-top: 16px;
     flex-wrap: wrap;
-    @media(min-width: 1200px){
-      width: 1200px;
+    @phone {
+      width: 500px;
     }
     .card {
       .border-bottom-grey();
       .flex(space-between, none, column);
-      background-color: @lambda-times-color-white;
+      background-color: @data-blue;
+     // background-color: @white;
       width: 380px;
       margin-bottom: 16px;
       padding: 24px;
       .headline {
-        font-size: 25px;
-        font-family: Didot, serif;
+        font-size: 24px;
+        font-family: 'Hind', sans-serif;
       }
       .author {
         .flex(none, center);
         margin-top: 15px;
         .img-container {
           padding-right: 10px;
-          border-right: 1px solid @lambda-times-color-lightgrey;
+          border-right: 1px solid @light-green;
           height: 40px;
           img {
             width: 40px;
