@@ -1,5 +1,21 @@
-body {
-  background-color: @white;
+// body {
+// //  background-color: @column-black;
+// }
+
+.flyingelement {
+  display: flex;
+  // flex-direction: column;
+  //width: 50%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  justify-content: center;
+  img {
+      display: block;
+      max-width:400px;
+      max-height:125px;
+      width: auto;
+      height: auto;
+    }
 }
 
 .teams {
@@ -7,11 +23,11 @@ body {
   .flex(center, center);
   .width-100();
   font-family: 'Hind', sans-serif;
-  height: 75px;
-  background-color: @white;
-  @phone {
-    width: 1280px;
-  }
+  //height: 75px;
+  background-color: @data-blue;
+  padding: 0;
+  margin: 0;
+  
   .groups {
     .flex(none, center);
     .title {
@@ -19,21 +35,44 @@ body {
       font-size: 24px;
       letter-spacing: 1px;
       font-weight: bold;
+      @media @phone {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+      }
     }
+    @media @phone {
+      .flex(center, center, column);
+      width: 100%;
+    }
+  
+  
+
     .team {
       .flex(none, center);
       color: @white;
-      background-color: @data-blue;
-      margin: 0 5px;
+      background-color: @dustin-yellow;
+      width: 20%;
+      //margin: 0 5px;
       height: 40px;
-      padding: 2px 10px;
+      //padding: 2px 10px;
       font-size: 14px;
       letter-spacing: 2px;
       cursor: pointer;
       font-weight: bold;
+      text-align: center;
+      justify-content: center;
       &:hover {
         text-decoration: none;
       }
+      @media @phone {
+        .flex(center, center, column);
+        width: 100%;
+        padding: 0;
+        margin: 0;
+      }
+
+
     }
     .active-team {
       background-color: @white;

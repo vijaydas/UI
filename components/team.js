@@ -1,3 +1,7 @@
+
+TweenMax.fromTo(".flyingelement", 1.5, {opacity: 0.0}, {opacity: 1.0});
+
+
 class TeamLink {
     constructor(teamElement) {
 
@@ -64,15 +68,7 @@ class TeamLink {
     }
   }
   
-  /* START HERE: 
   
-  - Select all classes named ".tab" and assign that value to the tabs variable
-  
-  - With your selection in place, now chain a .forEach() method onto the tabs variable to iterate over the DOM NodeList
-  
-  - In your .forEach() method's callback function, return a new instance of TabLink and pass in each tab as a parameter
-  
-  */
   
  let teams = document.querySelectorAll(".team").forEach(team => new TeamLink(team));
  console.log(teams);

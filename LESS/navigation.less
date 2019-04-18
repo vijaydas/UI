@@ -11,6 +11,14 @@
     color: @white;
     margin: 0 auto;
     height: 70px;
+    @media @tablet {
+        flex-direction: column;
+        height: 120px;
+    }
+    @media @phone {
+        flex-direction: column;
+        height: 150px;
+    }
 
     .logo {
         text-decoration: none;
