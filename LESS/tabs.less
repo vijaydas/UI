@@ -9,6 +9,22 @@
       display: flex;
       justify-content: center;
       padding-top: 60px;
+      background-color: @block;
+        background-image:
+        linear-gradient(rgba(@line,@sublineAlpha) 1px, @trans 1px), /*sub horiz*/
+        linear-gradient(@line 1px, @trans 1px), /*main horiz*/
+        linear-gradient(90deg, rgba(@line,@sublineAlpha) 1px, @trans 1px), /*sub vert*/
+        linear-gradient(90deg, rgba(@line,@lineAlpha) 1px, @trans 1px), /*main vert*/
+        linear-gradient(@trans 3px, @block 3px, @block @gridSize - 2, @trans @gridSize - 2), /*nub horiz*/
+        linear-gradient(90deg, rgba(@line,@lineAlpha) 3px, @trans 3px, @trans @gridSize - 2, rgba(@line,@lineAlpha) @gridSize - 2) /*nub vert*/
+        ;
+        background-size:
+        @gridSize / @subdivisions @gridSize / @subdivisions,
+        @gridSize @gridSize,
+        @gridSize / @subdivisions @gridSize / @subdivisions,
+        @gridSize @gridSize,
+        @gridSize @gridSize,
+        @gridSize @gridSize;
     }
     .tabs-item {
       display: none; 
@@ -24,14 +40,31 @@
       }
       .tabs-item-description {
         font-family: 'Hind', sans-serif;
-        background-color: @light-gray;
+        //background-color: @light-gray;
         font-size: 18px;
         display: flex;
         height: 0 auto;
+        // background-color: @block;
+        // background-image:
+        // linear-gradient(rgba(@line,@sublineAlpha) 1px, @trans 1px), /*sub horiz*/
+        // linear-gradient(@line 1px, @trans 1px), /*main horiz*/
+        // linear-gradient(90deg, rgba(@line,@sublineAlpha) 1px, @trans 1px), /*sub vert*/
+        // linear-gradient(90deg, rgba(@line,@lineAlpha) 1px, @trans 1px), /*main vert*/
+        // linear-gradient(@trans 3px, @block 3px, @block @gridSize - 2, @trans @gridSize - 2), /*nub horiz*/
+        // linear-gradient(90deg, rgba(@line,@lineAlpha) 3px, @trans 3px, @trans @gridSize - 2, rgba(@line,@lineAlpha) @gridSize - 2) /*nub vert*/
+        // ;
+        // background-size:
+        // @gridSize / @subdivisions @gridSize / @subdivisions,
+        // @gridSize @gridSize,
+        // @gridSize / @subdivisions @gridSize / @subdivisions,
+        // @gridSize @gridSize,
+        // @gridSize @gridSize,
+        // @gridSize @gridSize;
+}
         
       }
 
-    }
+    
     .tabs-item-selected {
       display: block;
       font-size: 24px;
@@ -53,8 +86,8 @@
       padding: 20px 0px;
       font-size: 18px;
       background-color: @back-blue;
-      border-right: 1px @white;
-      color: @light-gray;
+      //border-right: 1px @white;
+      //color: @light-gray;
       cursor: pointer;
       // &:hover {
       //   background-color: @light-green;
@@ -62,7 +95,7 @@
     }
     .tabs-link-selected {
       z-index: 2;
-      border-right: 1px solid @back-blue;
+      //border-right: 1px solid @back-blue;
       background-color: @light-gray;
       color: black;
       &:hover {
@@ -71,8 +104,8 @@
     }
     
 
-
   }
+  
   
   
   
