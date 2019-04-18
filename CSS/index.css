@@ -446,9 +446,6 @@ body {
   margin-top: 16px;
   flex-wrap: wrap;
 }
-@phone {
-  width: 500px;
-}
 .cards-container .card {
   border-bottom: 1px solid #F5F0F6;
   display: flex;
@@ -459,6 +456,10 @@ body {
   width: 380px;
   margin-bottom: 16px;
   padding: 24px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #F5F0F6;
 }
 .cards-container .card .headline {
   font-size: 24px;
