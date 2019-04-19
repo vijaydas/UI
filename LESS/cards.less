@@ -1,21 +1,13 @@
 .cards-container {
   font-family: "Ubuntu", sans-serif;
   .flex(space-evenly);
-  // display: flex;
-  // justify-content: center;
   .width-100();
   background-color: @column-black;
-  //margin-top:0px;
   flex-wrap: wrap;
 
-  // @phone {
-  //   width: 500px;
-  // }
   .card {
-    //.border-bottom-grey();
-    .flex(space-between, none, column);
+   .flex(space-between, none, column);
     background-color: @column-black;
-    // background-color: @white;
     width: 300px;
     height: 175px;
     margin-top: 20px;
@@ -25,17 +17,17 @@
     border-style: solid;
     border-width: 2px;
     border-color: @card-border;
+  
     p {
       color: @white;
     }
+  
     span {
-      //font-family: "Hind", sans-serif;
       color: @white;
-      //padding-left: 10px;
       font-size: 12px;
       letter-spacing: 1px;
-      //font-weight: bold;
     }
+  
     .card-top {
       .flex(space-between, none, row-reverse);
       width: 100%;
@@ -59,15 +51,10 @@
 
     .profile-header {
       display: flex;
-      //flex-direction: row;
-      //padding-right: 10px;
-      //border-right: 1px solid @light-blue;
       justify-content: flex-end;
       width: 20%;
 
       img {
-        //display: flex;
-        //justify-content: flex-end;
         height: 20px;
         width: 20px;
       }
@@ -75,9 +62,6 @@
 
     .team-member {
       .flex(none, none);
-      //align-items:;
-      //margin-top: 15px;
-
       width: 80%;
       .img-container {
         padding-right: 10px;
@@ -89,13 +73,11 @@
         }
       }
       span {
-        //
         color: @white;
         padding-left: 10px;
         font-size: 18px;
         letter-spacing: 1px;
-        //font-weight: bold;
-      }
+       }
     }
   }
 }
